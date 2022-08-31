@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <title>Booking</title>
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" type="text/css" href="../public/assets/css/bootstrap.min.css">
+
+    <link rel="stylesheet" type="text/css" href="../public/assets/css/font-awesome.css">
+
+    <link rel="stylesheet" href="../public/assets/css/templatemo-klassy-cafe.css">
+
+    <link rel="stylesheet" href="../public/assets/css/owl-carousel.css">
+
+    <link rel="stylesheet" href="../public/assets/css/lightbox.css">
+
+    </head>
+
+    <body>
+        
+    
+    <!-- ***** Preloader Start ***** -->
+    <div id="preloader">
+        <div class="jumper">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>  
+    <!-- ***** Preloader End ***** -->
+    
+    
+    <!-- ***** Header Area Start ***** -->
+    <header class="header-area header-sticky">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="main-nav">
+                        <!-- ***** Logo Start ***** -->
+                        <a href="../public/index.html" class="logo">
+                            <img src="../public/assets/images/297131383_730684201364608_800479452917080948_n.png" height="50" width="50" align="Booking">
+                            
+                        </a> &nbsp; 
+                        <h6 class="logo"> &nbsp; Booking</h6>
+                        <!-- ***** Logo End ***** -->
+                        <!-- ***** Menu ***** -->
+                        <ul class="nav">
+                            <li class="scroll-to-section"><a href="../public/index.html" class="active">Home</a></li>
+                            <li class="scroll-to-section"><a href="../public/register.html">booking</a></li> 
+                        </ul>        
+                        <a class='menu-trigger'>
+                            <span>Menu</span>
+                        </a>
+                        <!-- ***** Menu  ***** -->
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ***** Header Area End ***** --><br><br>
+      <div class="container">
+        <br><br><br><br>
+        <div class="background">
+            <div class="shape"></div>
+            <div class="shape"></div>
+        </div>
+        <br><br><br><br><br>
+        <form>
+            <h3>Register</h3>
+            <label for="password">Car Registration</label>
+            <input type="text" placeholder="Car Registration" id="car_id">
+
+            <label for="cars">Choose a car:</label>
+             <select name="cars" id="cars">
+                <option value="volvo">Volvo</option>
+                <option value="Toyota">Toyota</option>
+                <option value="Isuzu">Isuzu</option>
+                <option value="Honda">Honda</option>
+                <option value="Mitsubishi">Mitsubishi</option>
+                <option value="Nissan">Nissan</option>
+                <option value="Mazda">Mazda</option>
+                <option value="Ford">Ford</option>
+                <option value="MG">MG</option>
+                <option value="Suzuki">Suzuki</option>
+             </select>
+
+             <label for="cars">Choose a car color:</label>
+             <select name="cars" id="cars">
+                <option value="black">Black</option>
+                <option value="red">Red</option>
+                <option value="gray">Gray</option>
+                <option value="White">White</option>
+             </select><br>
+            <center><button><a href="../public/bookfl.html">Log In</a></button></center>
+        </form>
+      </div>
+      
+     <!-- jQuery -->
+     <script src="../public/js/jquery-2.1.0.min.js"></script>
+
+     <!-- Bootstrap -->
+     <script src="../public/js/popper.js"></script>
+     <script src="../public/js/bootstrap.min.js"></script>
+ 
+     <!-- Plugins -->
+     <script src="../public/js/owl-carousel.js"></script>
+     <script src="../public/js/accordions.js"></script>
+     <script src="../public/js/datepicker.js"></script>
+     <script src="../public/js/scrollreveal.min.js"></script>
+     <script src="../public/js/waypoints.min.js"></script>
+     <script src="../public/js/jquery.counterup.min.js"></script>
+     <script src="../public/js/imgfix.min.js"></script> 
+     <script src="../public/js/slick.js"></script> 
+     <script src="../public/js/lightbox.js"></script> 
+     <script src="../public/js/isotope.js"></script> 
+     
+     <!-- Global Init -->
+     <script src="../public/js/custom.js"></script>
+    <script>
+        $(function() {
+            var selectedClass = "";
+            $("p").click(function(){
+            selectedClass = $(this).attr("data-rel");
+            $("#portfolio").fadeTo(50, 0.1);
+                $("#portfolio div").not("."+selectedClass).fadeOut();
+            setTimeout(function() {
+              $("."+selectedClass).fadeIn();
+              $("#portfolio").fadeTo(50, 1);
+            }, 500);
+                
+            });
+        });
+    </script>    
+   
+  </body>
+</html>
