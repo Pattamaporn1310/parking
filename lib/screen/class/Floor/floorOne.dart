@@ -24,6 +24,7 @@ class _FlooroneState extends State<Floorone> {
           itemBuilder: (BuildContext context, int index) {
             return ListTile(
               title: Text(floor[index].toString()),
+              subtitle: Text(floor[index].toString()),
             );
           }),
     );
